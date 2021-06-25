@@ -1,0 +1,593 @@
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?30900161");
+  src: url("../font/fontello.eot?30900161#iefix") format("embedded-opentype"), url("../font/fontello.woff2?30900161") format("woff2"), url("../font/fontello.woff?30900161") format("woff"), url("../font/fontello.ttf?30900161") format("truetype"), url("../font/fontello.svg?30900161#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body, a, p, input, select, textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  position: relative;
+  color: #383838;
+  display: block;
+  text-decoration: none; }
+
+.body {
+  position: relative; }
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.about-container {
+  background-image: url(http://0effortthemes.com/soccerclubv2/images/background/innerpageBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -9rem;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: relative; }
+  .about-container__menu {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 4vh;
+    opacity: 0.8;
+    z-index: 1;
+    display: flex;
+    padding: 5rem 15rem;
+    align-items: center;
+    overflow: hidden; }
+    .about-container__menu--menulist {
+      position: absolute;
+      left: 30rem;
+      color: white; }
+      .about-container__menu--menulist ul {
+        color: white;
+        display: flex; }
+      .about-container__menu--menulist li {
+        margin-right: 5rem;
+        color: white; }
+    .about-container__menu--logo {
+      position: absolute;
+      left: 4rem;
+      top: 1.2rem; }
+      .about-container__menu--logo img {
+        width: 8.4rem;
+        height: 8rem; }
+    .about-container__menu--title {
+      position: absolute;
+      left: 80rem;
+      width: 50rem;
+      height: 4rem;
+      font-size: 12rem;
+      font-style: italic;
+      color: darkslategrey;
+      font-family: auto;
+      display: flex; }
+      .about-container__menu--title input {
+        margin-right: 1rem;
+        padding: 0.5rem;
+        border: 1px solid lightgray;
+        background-color: white;
+        width: 40%;
+        border-radius: 2.5rem; }
+      .about-container__menu--title button {
+        background-color: #11274e;
+        color: white;
+        width: 34%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .about-container__menu--title button:hover {
+        background-color: #11274e;
+        transition: 1s ease; }
+    .about-container__menu--socialicons {
+      display: flex;
+      position: absolute;
+      right: 2rem; }
+      .about-container__menu--socialicons--facebook {
+        height: fit-content;
+        width: 4rem;
+        margin-right: 0.5rem;
+        padding: 0.5rem; }
+        .about-container__menu--socialicons--facebook i {
+          font-size: 2.4rem; }
+      .about-container__menu--socialicons--pinterest {
+        height: fit-content;
+        width: fit-content;
+        padding: 0.5rem;
+        margin-right: 1.5rem; }
+        .about-container__menu--socialicons--pinterest i {
+          font-size: 2.4rem; }
+      .about-container__menu--socialicons--twitter {
+        height: fit-content;
+        width: fit-content;
+        margin-right: 1rem;
+        padding: 0.5rem; }
+        .about-container__menu--socialicons--twitter i {
+          font-size: 2.4rem; }
+  .about-container--heading {
+    transform: translateY(25rem);
+    /*display:flex;
+            justify-content: center;*/
+    font-size: 5rem;
+    font-weight: 700;
+    color: white; }
+    .about-container--heading span {
+      color: cornflowerblue; }
+
+.blur {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -ms-filter: blur(8px); }
+
+.club {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/whiteBgBig.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  .club__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; }
+    .club__container--heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 5rem; }
+      .club__container--heading span {
+        color: cornflowerblue; }
+    .club__container--underline {
+      width: 8rem;
+      height: 0.3rem;
+      background-color: blue; }
+    .club__container--paragraph {
+      text-align: center;
+      width: 70%;
+      margin: 6rem;
+      color: lightgray;
+      line-height: 1.8rem; }
+
+.board-members {
+  overflow: hidden;
+  width: 100%;
+  height: 120vh;
+  background-image: url(../img/heroesBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .board-members__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; }
+    .board-members__container--heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 5rem;
+      color: white; }
+      .board-members__container--heading span {
+        color: cornflowerblue; }
+    .board-members__container--underline {
+      width: 8rem;
+      height: 0.3rem;
+      background-color: blue; }
+    .board-members__container--paragraph {
+      text-align: center;
+      width: 70%;
+      margin: 4rem;
+      color: gray;
+      line-height: 1.8rem; }
+  .board-members__cards {
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+    transform: translateX(6rem); }
+    .board-members__cards--1 {
+      width: 62%;
+      height: 60vh;
+      margin-right: -10rem; }
+      .board-members__cards--1--image {
+        width: 62%;
+        height: 30vh; }
+      .board-members__cards--1--name {
+        width: 62%;
+        padding: 1rem;
+        color: whitesmoke;
+        background-color: #282f37; }
+      .board-members__cards--1--position {
+        width: 62%;
+        padding: 0.3rem 1rem;
+        color: blue;
+        background-color: #282f37; }
+      .board-members__cards--1--paragraph {
+        width: 62%;
+        padding: 1rem;
+        color: gray;
+        background-color: #282f37; }
+      .board-members__cards--1--description {
+        width: 62%;
+        padding: 3rem 1rem;
+        background-color: #20262d;
+        color: gray; }
+      .board-members__cards--1--dob {
+        width: 62%;
+        padding: 1rem;
+        background-color: cornflowerblue;
+        display: flex;
+        color: whitesmoke; }
+    .board-members__cards--2 {
+      width: 62%;
+      height: 60vh;
+      margin-right: -10rem; }
+      .board-members__cards--2--image {
+        width: 62%;
+        height: 30vh; }
+      .board-members__cards--2--name {
+        width: 62%;
+        padding: 1rem;
+        color: whitesmoke;
+        background-color: #282f37; }
+      .board-members__cards--2--position {
+        width: 62%;
+        padding: 0.3rem 1rem;
+        color: blue;
+        background-color: #282f37; }
+      .board-members__cards--2--paragraph {
+        width: 62%;
+        padding: 1rem;
+        color: gray;
+        background-color: #282f37; }
+      .board-members__cards--2--description {
+        width: 62%;
+        padding: 3rem 1rem;
+        background-color: #20262d;
+        color: gray; }
+      .board-members__cards--2--dob {
+        width: 62%;
+        padding: 1rem;
+        background-color: cornflowerblue;
+        display: flex;
+        color: whitesmoke; }
+    .board-members__cards--3 {
+      width: 62%;
+      height: 60vh;
+      margin-right: -10rem; }
+      .board-members__cards--3--image {
+        width: 62%;
+        height: 30vh; }
+      .board-members__cards--3--name {
+        width: 62%;
+        padding: 1rem;
+        color: whitesmoke;
+        background-color: #282f37; }
+      .board-members__cards--3--position {
+        width: 62%;
+        padding: 0.3rem 1rem;
+        color: blue;
+        background-color: #282f37; }
+      .board-members__cards--3--paragraph {
+        width: 62%;
+        padding: 1rem;
+        color: gray;
+        background-color: #282f37; }
+      .board-members__cards--3--description {
+        width: 62%;
+        padding: 3rem 1rem;
+        background-color: #20262d;
+        color: gray; }
+      .board-members__cards--3--dob {
+        width: 62%;
+        padding: 1rem;
+        background-color: cornflowerblue;
+        display: flex;
+        color: whitesmoke; }
+
+.achievements {
+  width: 100%;
+  background: url(../img/bgTopLeft.png) left top no-repeat, url(../img/bgBottomRight.png) right bottom no-repeat #f5f5f5; }
+  .achievements__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .achievements__container--heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 5rem;
+      color: #444444; }
+      .achievements__container--heading span {
+        color: cornflowerblue; }
+    .achievements__container--underline {
+      width: 8rem;
+      height: 0.3rem;
+      background-color: blue; }
+    .achievements__container--paragraph {
+      text-align: center;
+      width: 70%;
+      margin: 4rem;
+      color: gray;
+      line-height: 1.8rem; }
+    .achievements__container--winners {
+      display: flex;
+      flex-direction: column;
+      width: 70%; }
+      .achievements__container--winners--1 {
+        background-color: white;
+        display: flex;
+        margin: 2rem; }
+        .achievements__container--winners--1--flex1 {
+          display: flex;
+          flex-direction: column;
+          width: 30%; }
+          .achievements__container--winners--1--flex1--image {
+            background: url(../img/background-news.jpg); }
+            .achievements__container--winners--1--flex1--image img {
+              display: flex;
+              margin: auto; }
+            .achievements__container--winners--1--flex1--image img:hover {
+              transform: scale(0.7, 0.7);
+              transition: 1.5s ease; }
+          .achievements__container--winners--1--flex1--duration {
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            padding: 1rem 0rem; }
+        .achievements__container--winners--1--flex2 {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          justify-content: space-evenly;
+          padding: 2rem; }
+          .achievements__container--winners--1--flex2--heading {
+            color: cornflowerblue;
+            margin-bottom: 2rem; }
+          .achievements__container--winners--1--flex2--paragraph {
+            color: lightgray;
+            text-align: justify; }
+          .achievements__container--winners--1--flex2--date {
+            color: lightgray;
+            margin-top: 2rem; }
+            .achievements__container--winners--1--flex2--date span {
+              color: cornflowerblue; }
+      .achievements__container--winners--2 {
+        display: flex;
+        margin: 2rem;
+        background-color: white; }
+        .achievements__container--winners--2--flex1 {
+          display: flex;
+          flex-direction: column;
+          width: 30%; }
+          .achievements__container--winners--2--flex1--image {
+            background: url(../img/background-news.jpg); }
+            .achievements__container--winners--2--flex1--image img {
+              display: flex;
+              margin: auto; }
+            .achievements__container--winners--2--flex1--image img:hover {
+              transform: scale(0.7, 0.7);
+              transition: 1.5s ease; }
+          .achievements__container--winners--2--flex1--duration {
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            padding: 1rem 0rem; }
+        .achievements__container--winners--2--flex2 {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          justify-content: space-evenly;
+          padding: 2rem; }
+          .achievements__container--winners--2--flex2--heading {
+            color: cornflowerblue;
+            margin-bottom: 2rem; }
+          .achievements__container--winners--2--flex2--paragraph {
+            color: lightgray;
+            text-align: justify; }
+          .achievements__container--winners--2--flex2--date {
+            color: lightgray;
+            margin-top: 2rem; }
+            .achievements__container--winners--2--flex2--date span {
+              color: cornflowerblue; }
+      .achievements__container--winners--3 {
+        display: flex;
+        margin: 2rem;
+        background-color: white; }
+        .achievements__container--winners--3--flex1 {
+          display: flex;
+          flex-direction: column;
+          width: 30%; }
+          .achievements__container--winners--3--flex1--image {
+            background: url(../img/background-news.jpg); }
+            .achievements__container--winners--3--flex1--image img {
+              display: flex;
+              margin: auto; }
+            .achievements__container--winners--3--flex1--image img:hover {
+              transform: scale(0.7, 0.7);
+              transition: 1.5s ease; }
+          .achievements__container--winners--3--flex1--duration {
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            padding: 1rem 0rem; }
+        .achievements__container--winners--3--flex2 {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          justify-content: space-evenly;
+          padding: 2rem; }
+          .achievements__container--winners--3--flex2--heading {
+            color: cornflowerblue;
+            margin-bottom: 2rem; }
+          .achievements__container--winners--3--flex2--paragraph {
+            color: lightgray;
+            text-align: justify; }
+          .achievements__container--winners--3--flex2--date {
+            color: lightgray;
+            margin-top: 2rem; }
+            .achievements__container--winners--3--flex2--date span {
+              color: cornflowerblue; }
+
+.players {
+  overflow: hidden;
+  width: 100%;
+  height: 120vh;
+  background-image: url(../img/playerdetailsBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .players__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; }
+    .players__container--heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 5rem;
+      color: white; }
+      .players__container--heading span {
+        color: cornflowerblue; }
+    .players__container--underline {
+      width: 8rem;
+      height: 0.3rem;
+      background-color: blue; }
+    .players__container--paragraph {
+      text-align: center;
+      width: 70%;
+      margin: 4rem;
+      color: #979da0;
+      line-height: 1.8rem; }
+    .players__container .fa-chevron-left::before {
+      content: "\f053";
+      margin-left: -5rem;
+      color: lightslategray;
+      display: flex;
+      align-items: center;
+      font-size: 5rem;
+      cursor: pointer;
+      height: 100%; }
+    .players__container .fa-chevron-right::before {
+      margin-left: 1rem;
+      color: lightslategray;
+      display: flex;
+      align-items: center;
+      font-size: 5rem;
+      cursor: pointer;
+      height: 100%; }
+    .players__container--playerinfo {
+      width: 100%;
+      height: 74vh;
+      display: flex;
+      margin-top: 4rem; }
+      .players__container--playerinfo--1 {
+        display: flex;
+        flex-direction: column; }
+        .players__container--playerinfo--1--image img {
+          width: 43rem;
+          height: 69vh; }
+        .players__container--playerinfo--1--socialicons {
+          background-color: #052152;
+          width: 43rem;
+          height: 5vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .players__container--playerinfo--1--socialicons--facebook i {
+            margin-right: 2rem;
+            color: white; }
+          .players__container--playerinfo--1--socialicons--linkdin a {
+            margin-right: 2rem;
+            color: white; }
+          .players__container--playerinfo--1--socialicons--twitter a {
+            margin-right: 2rem;
+            color: white; }
+          .players__container--playerinfo--1--socialicons--behance a {
+            margin-right: 2rem;
+            color: white; }
+      .players__container--playerinfo--2 {
+        background-image: url(../img/heroesBg.jpg);
+        background-size: cover;
+        width: 100%;
+        padding: 2rem; }
+        .players__container--playerinfo--2--div1 {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: space-between; }
+          .players__container--playerinfo--2--div1--list--1 {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            font-size: 1rem; }
+          .players__container--playerinfo--2--div1--list--2 {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            font-size: 1rem; }
+          .players__container--playerinfo--2--div1--list--3 {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            font-size: 1rem; }
+        .players__container--playerinfo--2--info p {
+          margin: 2rem 0rem;
+          color: #0541ad;
+          font-size: 2rem; }
+        .players__container--playerinfo--2--para {
+          color: lightgray;
+          font-size: 1.1rem; }
+        .players__container--playerinfo--2--info p {
+          color: #0541ad;
+          font-size: 2rem; }
+        .players__container--playerinfo--2--para {
+          color: gray;
+          font-size: 1.1rem; }
+        .players__container--playerinfo--2--list {
+          color: lightgray;
+          line-height: 2.5rem;
+          font-size: 1.3rem; }
+
+.sponsors {
+  background-image: url(../img/whiteBg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh; }
+  .sponsors__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sponsors__container--heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 5rem;
+      color: #444444; }
+      .sponsors__container--heading span {
+        color: cornflowerblue; }
+    .sponsors__container--underline {
+      width: 8rem;
+      height: 0.3rem;
+      background-color: blue; }
+    .sponsors__container--listitems {
+      display: flex;
+      margin: 5rem; }
+      .sponsors__container--listitems--ul {
+        display: flex; }
+      .sponsors__container--listitems--li {
+        margin-right: 4rem; }

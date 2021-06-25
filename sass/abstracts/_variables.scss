@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?30900161');
+    src: url('../font/fontello.eot?30900161#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?30900161') format('woff2'),
+         url('../font/fontello.woff?30900161') format('woff'),
+         url('../font/fontello.ttf?30900161') format('truetype'),
+         url('../font/fontello.svg?30900161#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//-----------------------       FONT        ----------------------------
+$font--raleway: 'Raleway', sans-serif;
+$font--calibri: "Source Serif Pro", serif;
+$font--serif: "Source Serif Pro", serif;
+$font--fontello: 'fontello';
+
+
+  
